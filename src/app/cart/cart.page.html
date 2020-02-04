@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" color="secondary">
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <p>{{item.name}}</p>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="kosongkan()" expand="block" color="danger">KOSONGKAN</ion-button>
+  <ion-button (click)="beli()" expand="block" color="light">PEMBELIAN</ion-button>
+</ion-content>
